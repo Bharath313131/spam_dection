@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template_string
 import joblib
+import os 
 
 app = Flask(__name__)
 model = joblib.load("model.pkl")
